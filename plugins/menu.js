@@ -189,7 +189,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": "© stikerin",
+          "description": "© IKAL BOTZ",
           "buttonText": "Klik Disini",
           "listType": "SINGLE_SELECT",
           "sections": [
@@ -398,6 +398,7 @@ handler.botAdmin = false
 handler.fail = null
 handler.exp = 3
 
+handler.register = true
 module.exports = handler
 
 const more = String.fromCharCode(1)
